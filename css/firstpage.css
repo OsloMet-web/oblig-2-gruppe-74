@@ -1,5 +1,7 @@
 :root {
     --arsorange:rgb(255, 69, 0);
+    --arsblack: rgb(7, 7, 7);
+    --arsgreen: rgb(4, 198, 105);
 }
 
 body {
@@ -13,8 +15,8 @@ body {
 but it is pretty round and has visible enough seriffs that it works here.**/
 
 nav {
-    background-color:rgb(7, 7, 7);
-    color:rgb(4, 198, 105)
+    background-color:var(--arsblack);
+    color:var(--arsgreen);
 }
 
 /** Hamburger menu, this is taken from Tengels example code**/
@@ -25,14 +27,55 @@ nav {
         display: flex;
         flex-direction: row;
         list-style-type: none;
+        height: 50px;
+        margin-top: -10px;
 
     }
     .menu li{
         padding-right: 4rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
     }
 
+    
+}
+
+@media (max-width: 1000px){
+    .menu{
+        list-style-type: none;
+        position: sticky;
+        height: 50px;
+        padding-left: 0px;
+    }
+    .menu-icon {
+        display: block;
+        background-image: url(../images/menu.svg);
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+        margin-left: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .hamburger-toggle-container {cursor: pointer;}
+
+    .menu li {
+        height: 0px;
+        overflow: hidden;
+    }
+    #burger-toggle:checked ~ .menu li {
+        height: 1rem;
+        width: auto;
+        background-color: var(--arsblack) ;
+        padding-left: 2.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    nav {
+        display: flex;
+        height: 50px;
+    }
 }
 /** Hamburger end**/
 
