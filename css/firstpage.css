@@ -11,7 +11,7 @@ body {
 /** arstechnica does not use a monospace font for their heading,
 but it is pretty round and has visible enough seriffs that it works here.**/
 
-.nav {
+nav {
     background-color:rgb(7, 7, 7);
     color:rgb(4, 198, 105)
 }
