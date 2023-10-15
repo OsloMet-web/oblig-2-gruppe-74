@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     line-height: 1.4rem;
-    /**background-color:rgb(238, 239, 240);**/
+    background-color: rgb(238, 239, 240);
 }
 /** arstechnica does not use a monospace font for their heading,
 but it is pretty round and has visible enough seriffs that it works here.**/
@@ -14,6 +14,13 @@ but it is pretty round and has visible enough seriffs that it works here.**/
 nav {
     background-color:rgb(7, 7, 7);
     color:rgb(4, 198, 105)
+}
+main, footer {
+    margin-left: 1rem;
+    margin-top: 0px;
+}
+article {
+    /**background-color:rgb(238, 239, 240);**/
 }
 
 h1 {
@@ -32,10 +39,29 @@ h2 {
     font-family: 'Courier New', monospace;
 }
 
-.byline {
+.writer {
+    color: var(--arsorange)
+}
+
+.published {
     color: rgb(86, 89, 92);
 }
 
-.writer {
-    color: var(--arsorange)
+.photoid{
+    color: rgb(160, 160, 160);
+    font-style: italic;
+}
+
+/** Hamburger menu, this is taken from Tengels example code**/
+
+
+
+
+
+footer > div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-style:solid;
 }
