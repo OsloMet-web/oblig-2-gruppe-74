@@ -16,7 +16,6 @@ but it's pretty round and has visible enough seriffs that it works here.**/
 
 nav {
     background-color:var(--arsblack);
-    color:var(--arsgreen);
 }
 
 h1 {
@@ -138,6 +137,10 @@ main {
 }
 
 /** Hamburger menu, this is based on Tengels example code**/
+.menu a {
+    color: var(--arsgreen);
+    text-decoration: none;
+}
 
 #burger-toggle {display: none;}
 
@@ -145,7 +148,6 @@ main {
     .menu{
         list-style-type: none;
         position: sticky;
-        color:var(--arsgreen);
         height: 50px;
         padding-left: 1rem;
     }
@@ -171,14 +173,11 @@ main {
         height: 1rem;
         width: auto;
         background-color: var(--arsblack) ;
-        color: var(--arsgreen) !important;
-        padding-top: 1rem;
-        padding-left: 2.5rem;
-        padding-right: 0.5rem;
-        padding-bottom: 0.5rem;
-        .menu > a{
-            color: var(--arsgreen);
-        }
+        margin-top: -5px;
+        padding-top: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 4rem;
+        height: 2rem;
     }
     nav {
         display: flex;
@@ -232,6 +231,10 @@ footer > div {
 
 .header-wrapper{
 	background-color: orange;
+}
+.top-header-wrapper a {
+    color: black;
+    text-decoration: none;
 }
 	
 
