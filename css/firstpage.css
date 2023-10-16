@@ -47,16 +47,43 @@ h2 {
     font-weight: bolder;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
 .photoid{
     color: rgb(160, 160, 160);
     font-style: italic;
     font-size: smaller;
 }
 
+main, footer {
+    margin-top: 0px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
 
-/** Grid structure **/
+
+/** GRID **/
 @media (max-width: 850px) {
-    
+    footer > div {
+        border-style:solid;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+
+}
+
+@media (min-widht: 851px){
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: minmax(500px, 40vw) minmax( 300px, 20vw) auto;
+        grid-template-rows: minmax (100px, auto);
+    }
 }
 
 
@@ -132,21 +159,4 @@ h2 {
     }
 
     
-}
-
-
-/** Hamburger end**/
-
-
-main, footer {
-    margin-left: 1rem;
-    margin-top: 0px;
-}
-
-footer > div {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    border-style:solid;
 }
