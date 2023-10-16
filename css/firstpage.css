@@ -140,3 +140,45 @@ footer > div {
     padding: 0.5rem;
     border-style:solid;
 }
+
+.learning-outcomes{
+	font-family: sans-serif;
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #fff
+}
+
+.wrapper {
+	margin: 50px;
+}
+
+.header-wrapper{
+	background-color: orange;
+}
+	
+
+.top-header-wrapper{
+	margin-left: 50px;
+	background-color: orange;
+	height: 100px;
+	font-size: 30px;
+	font-weight: bold;
+	align-items: center;
+	display: flex;
+	vertical-align: middle;
+}
+
+.banner-margin{
+	margin-left: 70px;
+}
+
+#hidden {
+  display: none;
+  height: 100px;
+  background: red;
+}
+:checked + #hidden {
+  display: block;
+}
