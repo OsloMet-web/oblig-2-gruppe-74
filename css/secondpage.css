@@ -33,11 +33,18 @@ body {
 	vertical-align: middle;
 }
 
-.student-wrapper{
+.banner-margin{
 	margin-left: 70px;
 }
 
-
+#hidden {
+  display: none;
+  height: 100px;
+  background: red;
+}
+:checked + #hidden {
+  display: block;
+}
 
 
 
