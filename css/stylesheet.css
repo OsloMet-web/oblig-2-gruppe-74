@@ -197,44 +197,9 @@ main {
 
     
 }
-<<<<<<< HEAD
-article {
-    /**background-color:rgb(238, 239, 240);**/
-}
 
-h1 {
-    font-size: 2em;
-    font-family: 'Courier New', monospace;
-}
+/** For second page - learning outcomes 1200 **/
 
-h2 {
-    font-size: 1.5em;
-    font-family: 'Courier New', monospace;
-    font-weight: bolder;
-}
-
-.ingress {
-    font-weight: bolder;
-    font-family: 'Courier New', monospace;
-    font-size: medium;
-}
-
-.writer {
-    color: var(--arsorange);
-    font-size: smaller;
-    font-weight: bolder;
-}
-
-.published {
-    color: rgb(86, 89, 92);
-    font-weight: bolder;
-}
-
-.photoid{
-    color: rgb(160, 160, 160);
-    font-style: italic;
-    font-size: smaller;
-}
 
 footer > div {
     margin-left: 1rem;
