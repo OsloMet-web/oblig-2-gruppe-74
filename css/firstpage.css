@@ -12,11 +12,45 @@ body {
     background-color: rgb(238, 239, 240);
 }
 /** arstechnica does not use a monospace font for their heading,
-but it is pretty round and has visible enough seriffs that it works here.**/
+but it's pretty round and has visible enough seriffs that it works here.**/
 
 nav {
     background-color:var(--arsblack);
     color:var(--arsgreen);
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Courier New', monospace;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+}
+
+.ingress {
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.writer {
+    color: var(--arsorange);
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+.published {
+    color: rgb(86, 89, 92);
+    font-weight: bolder;
+}
+
+.photoid{
+    color: rgb(160, 160, 160);
+    font-style: italic;
+    font-size: smaller;
 }
 
 
@@ -27,34 +61,25 @@ nav {
 
 
 
-/** Hamburger menu, this is taken from Tengels example code**/
+
+
+
+
+
+
+
+
+/** Hamburger menu, this is based on Tengels example code**/
+
 #burger-toggle {display: none;}
-
-@media (min-width: 801px){
-    .menu{
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        height: 50px;
-        margin-top: 50px;
-        
-
-    }
-    .menu li{
-        padding-right: 4rem;
-        padding-top: 1.2rem;
-        padding-bottom: 1.2rem;
-    }
-
-    
-}
 
 @media (max-width: 800px){
     .menu{
         list-style-type: none;
         position: sticky;
+        color:var(--arsgreen);
         height: 50px;
-        margin-top: 50px;
+        margin-top: 50px; /** VIRKER IKKE!**/
         padding-left: 0px;
     }
     .menu-icon {
@@ -78,6 +103,7 @@ nav {
         height: 1rem;
         width: auto;
         background-color: var(--arsblack) ;
+        color:var(--arsgreen);
         padding-top: 1rem;
         padding-left: 2.5rem;
         padding-right: 0.5rem;
@@ -88,49 +114,33 @@ nav {
         height: 50px;
     }
 }
+
+@media (min-width: 801px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        height: 50px;
+        margin-top: 50px;
+        
+
+    }
+    .menu li{
+        padding-right: 4rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    
+}
+
+
 /** Hamburger end**/
 
 
 main, footer {
     margin-left: 1rem;
     margin-top: 0px;
-}
-article {
-    /**background-color:rgb(238, 239, 240);**/
-}
-
-h1 {
-    font-size: 2em;
-    font-family: 'Courier New', monospace;
-}
-
-h2 {
-    font-size: 1.5em;
-    font-family: 'Courier New', monospace;
-    font-weight: bolder;
-}
-
-.ingress {
-    font-weight: bolder;
-    font-family: 'Courier New', monospace;
-    font-size: medium;
-}
-
-.writer {
-    color: var(--arsorange);
-    font-size: smaller;
-    font-weight: bolder;
-}
-
-.published {
-    color: rgb(86, 89, 92);
-    font-weight: bolder;
-}
-
-.photoid{
-    color: rgb(160, 160, 160);
-    font-style: italic;
-    font-size: smaller;
 }
 
 footer > div {
