@@ -207,6 +207,13 @@ main {
 
 
 /** For second page - learning outcomes 1200 **/
+.h1learningoutcomes{
+    font-family: sans-serif;
+}
+.wrapper h2 {
+    font-family: sans-serif;
+}
+
 
 footer > div {
     margin-left: 1rem;
