@@ -214,13 +214,11 @@ main {
     font-family: sans-serif;
 }
 
-
 footer > div {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
-    border-style:solid;
 }
 
 .learning-outcomes{
