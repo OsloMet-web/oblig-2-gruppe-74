@@ -12,50 +12,139 @@ body {
     background-color: rgb(238, 239, 240);
 }
 /** arstechnica does not use a monospace font for their heading,
-but it is pretty round and has visible enough seriffs that it works here.**/
+but it's pretty round and has visible enough seriffs that it works here.**/
 
 nav {
     background-color:var(--arsblack);
     color:var(--arsgreen);
 }
 
+h1 {
+    font-size: 2em;
+    font-family: 'Courier New', monospace;
+    margin-top: 2rem;
+}
 
-/** Grid structure **/
-@media (max-width: 850px) {
-    
+h2 {
+    font-size: 1.5em;
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+}
+
+.ingress {
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.writer {
+    color: var(--arsorange);
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+.published {
+    color: rgb(86, 89, 92);
+    font-weight: bolder;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.photoid{
+    color: rgb(160, 160, 160);
+    font-style: italic;
+    font-size: smaller;
+}
+
+main {
+    margin-top: 0px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 
+/** GRID **/
+@media (max-width: 800px) {
+    footer > div {
+        background-color: var(--arsgreen);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
 
-/** Hamburger menu, this is taken from Tengels example code**/
-#burger-toggle {display: none;}
+    .footer{
+        text-align: center;
+    }
+
+}
 
 @media (min-width: 801px){
-    .menu{
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        height: 50px;
-        margin-top: 50px;
-        
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: minmax(100px, 100px) minmax( 500px, 700px) auto;
+        grid-template-rows: minmax(100px, auto);
+    }
+    .textboxintro {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    /**The image is only for visual likeness.**/
+    .commentsbox {
+        grid-column: 1/2;
+        grid-row: 2;
+        background-image: url(../images/comment.svg);
+        background-size: contain;
+        max-height: 100px;
+    }
+
+    .textboxarticle{
+        grid-column: 2/3;
+        grid-row: 2;
+        height: fit-content;
+        padding-left: 1rem;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: minmax(100px, 425px) minmax(100px, 425px) auto;
 
     }
-    .menu li{
-        padding-right: 4rem;
-        padding-top: 1.2rem;
-        padding-bottom: 1.2rem;
+    .footerleft {
+        grid-column: 1/2;
+        background-color: var(--arsgreen);
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+        padding: 0.2rem;
     }
-
-    
+    .footerright {
+        grid-column: 2/3;
+        background-color: var(--arsgreen);
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+        padding: 0.2rem;
+    }
 }
+
+/** Hamburger menu, this is based on Tengels example code**/
+
+#burger-toggle {display: none;}
 
 @media (max-width: 800px){
     .menu{
         list-style-type: none;
         position: sticky;
+        color:var(--arsgreen);
         height: 50px;
-        margin-top: 50px;
-        padding-left: 0px;
+        padding-left: 1rem;
     }
     .menu-icon {
         display: block;
@@ -78,6 +167,7 @@ nav {
         height: 1rem;
         width: auto;
         background-color: var(--arsblack) ;
+        color:var(--arsgreen);
         padding-top: 1rem;
         padding-left: 2.5rem;
         padding-right: 0.5rem;
@@ -88,13 +178,26 @@ nav {
         height: 50px;
     }
 }
-/** Hamburger end**/
 
+@media (min-width: 801px){
+    .menu{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        height: 50px;
+        margin-top: 50px;
+        
 
-main, footer {
-    margin-left: 1rem;
-    margin-top: 0px;
+    }
+    .menu li{
+        padding-right: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    
 }
+<<<<<<< HEAD
 article {
     /**background-color:rgb(238, 239, 240);**/
 }
@@ -182,3 +285,4 @@ footer > div {
 :checked + #hidden {
   display: block;
 }
+
