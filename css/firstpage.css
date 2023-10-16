@@ -286,3 +286,21 @@ footer > div {
   display: block;
 }
 
+.footer2left {
+        grid-column: 1/2;
+        background-color: orange;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+        padding: 0.2rem;
+    }
+    .footer2right {
+        grid-column: 2/3;
+        background-color: orange;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+        padding: 0.2rem;
+    }
