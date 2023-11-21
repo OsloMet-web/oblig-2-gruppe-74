@@ -144,66 +144,49 @@ main {
 
 #burger-toggle {display: none;}
 
-@media (max-width: 800px){
-    .menu{
-        list-style-type: none;
-        position: sticky;
-        height: 50px;
-        padding-left: 1rem;
-    }
-    .menu-icon {
-        display: block;
-        background-image: url(../images/menu.svg);
-        background-size: cover;
-        height: 30px;
-        width: 30px;
-        margin-top: 10px;
-        margin-left: 1rem;
-        margin-bottom: 10px;
-    }
 
-    .hamburger-toggle-container {cursor: pointer;}
-
-    .menu li {
-        height: 0px;
-        overflow: hidden;
-    }
-    
-    #burger-toggle:checked ~ .menu li {
-        height: 1rem;
-        width: auto;
-        background-color: var(--arsblack) ;
-        margin-top: -5px;
-        padding-top: 0.5rem;
-        padding-left: 2rem;
-        padding-right: 4rem;
-        height: 2rem;
-    }
-    nav {
-        display: flex;
-        height: 50px;
-    }
-
+.menu{
+    list-style-type: none;
+    position: sticky;
+    height: 50px;
+    padding-left: 1rem;
+}
+.menu-icon {
+    display: block;
+    background-image: url(../images/menu.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 1rem;
+    margin-bottom: 10px;
 }
 
-@media (min-width: 801px){
-    .menu{
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        height: 50px;
-        margin-top: 50px;
-        
+.hamburger-toggle-container {cursor: pointer;}
 
-    }
-    .menu li{
-        padding-right: 4rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    
+.menu li {
+    height: 0px;
+    overflow: hidden;
 }
+    
+#burger-toggle:checked ~ .menu li {
+    height: 1rem;
+    width: auto;
+    background-color: var(--arsblack) ;
+    margin-top: -5px;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    height: 2rem;
+}
+nav {
+    display: flex;
+    height: 50px;
+}
+
+
+
+
 
 
 /** For second page - learning outcomes 1200 **/
